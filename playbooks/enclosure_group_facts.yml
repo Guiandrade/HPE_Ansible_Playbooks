@@ -19,7 +19,7 @@
 
   vars:
     # Provide the OneView IP address and credentials in oneview-config.json
-    config: "{{ playbook_dir }}/configs/oneview-config.json"
+    config: "{{ playbook_dir }}/configs/oneview_config.json"
   
   tasks:
     - name: Gather facts about all Enclosure Groups
