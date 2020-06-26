@@ -33,7 +33,7 @@
           fullName: "{{ full_name }}"
           mobilePhone: "{{ mobile_phone }}"
           type: "{{ type_user }}"
-          roles:
-            - "{{ role_name }}"
+          permissions:
+            - roleName: "{{ role_name }}"
       delegate_to: localhost
       register: user_1
