@@ -27,13 +27,13 @@
         state: present
         data:
           userName: "{{ user_name }}"
-          password: myPass1234
+          password: "{{ password }}"
           emailAddress: "{{ email }}"
           enabled: true
-          fullName: testUser101
-          mobilePhone: '555-2121'
-          officePhone: '555-1212'
+          fullName: "{{ full_name }}"
+          mobilePhone: "{{ mobile_phone }}"
+          type: "{{ type_user }}"
           roles:
-            - Read only
+            - "{{ role_name }}"
       delegate_to: localhost
       register: user_1
