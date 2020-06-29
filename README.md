@@ -24,3 +24,9 @@ docker run -it --rm -v {INSERT PLAYBOOKS FOLDER PATH OR PLAYBOOKS VOLUME}:/playb
 cd /playbooks
 ```
 *Note: The playbooks folder is mounted with readonly permissions, so please edit the files outside the container.*
+
+4) Run this command to test if connection to the OneView appliance or Synergy Composer is working:
+
+```
+ansible-playbook -i /configs/hosts enclosure_group_facts.yml
+```
