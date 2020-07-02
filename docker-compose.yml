@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  apache:
+    image: 'bitnami/apache:latest'
+    ports:
+      - '8081:8080'
+      - '443:8443'
+    volumes:
+      - ./HPE_Ansible_Playbooks/isos:/app
