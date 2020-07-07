@@ -52,7 +52,7 @@ ansible-playbook -i /configs/hosts enclosure_group_facts.yml
 3) To be able to use the url from the oneview-ansible container please add the *--network="host"*:
 
 ```
-docker run -it --rm --netowork="host" -v {INSERT PLAYBOOKS FOLDER PATH OR PLAYBOOKS VOLUME}:/playbooks:ro hewlettpackardenterprise/oneview-ansible-debian /bin/bash
+docker run -it --rm --network="host" -v {INSERT PLAYBOOKS FOLDER PATH OR PLAYBOOKS VOLUME}:/playbooks:ro hewlettpackardenterprise/oneview-ansible-debian /bin/bash
 cd /playbooks
 ```
 
